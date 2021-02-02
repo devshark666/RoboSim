@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		248E47DA25C9880D00F3DC25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E47D925C9880D00F3DC25 /* AppDelegate.swift */; };
+		248E47DC25C9880D00F3DC25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E47DB25C9880D00F3DC25 /* SceneDelegate.swift */; };
+		248E47E325C9880E00F3DC25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 248E47E225C9880E00F3DC25 /* Assets.xcassets */; };
+		248E47E625C9880E00F3DC25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 248E47E425C9880E00F3DC25 /* LaunchScreen.storyboard */; };
+		248E481725C9891E00F3DC25 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 248E481625C9891E00F3DC25 /* IQKeyboardManagerSwift */; };
+		248E481C25C9894200F3DC25 /* Layoutless in Frameworks */ = {isa = PBXBuildFile; productRef = 248E481B25C9894200F3DC25 /* Layoutless */; };
+		248E482825C98A5900F3DC25 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E482525C98A5900F3DC25 /* MainViewController.swift */; };
+		248E482925C98A5900F3DC25 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E482625C98A5900F3DC25 /* MainView.swift */; };
+		248E482A25C98A5900F3DC25 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E482725C98A5900F3DC25 /* MainViewModel.swift */; };
+		248E483225C98A6500F3DC25 /* StartPositionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E482D25C98A6400F3DC25 /* StartPositionView.swift */; };
+		248E483325C98A6500F3DC25 /* RoomSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E482E25C98A6400F3DC25 /* RoomSizeView.swift */; };
+		248E483425C98A6500F3DC25 /* RobotControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E482F25C98A6500F3DC25 /* RobotControlView.swift */; };
+		248E483525C98A6500F3DC25 /* RobotStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E483025C98A6500F3DC25 /* RobotStateView.swift */; };
+		248E483625C98A6500F3DC25 /* NumericField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E483125C98A6500F3DC25 /* NumericField.swift */; };
+		248E484525C98A7900F3DC25 /* UIAlertController+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E484325C98A7900F3DC25 /* UIAlertController+Builder.swift */; };
+		248E484625C98A7900F3DC25 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E484425C98A7900F3DC25 /* UIFont+Extensions.swift */; };
+		248E484C25C98A8100F3DC25 /* BorderErrorField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E484925C98A8100F3DC25 /* BorderErrorField.swift */; };
+		248E484D25C98A8100F3DC25 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E484A25C98A8100F3DC25 /* ContentViewController.swift */; };
+		248E484E25C98A8100F3DC25 /* ErrorField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E484B25C98A8100F3DC25 /* ErrorField.swift */; };
+		248E485E25C98B2500F3DC25 /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E485D25C98B2500F3DC25 /* Stylesheet.swift */; };
+		248E488225C9AFB900F3DC25 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E487D25C9AFB900F3DC25 /* Room.swift */; };
+		248E488325C9AFB900F3DC25 /* RobotState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E487E25C9AFB900F3DC25 /* RobotState.swift */; };
+		248E488425C9AFB900F3DC25 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E487F25C9AFB900F3DC25 /* Direction.swift */; };
+		248E488525C9AFB900F3DC25 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E488025C9AFB900F3DC25 /* Command.swift */; };
+		248E488625C9AFB900F3DC25 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E488125C9AFB900F3DC25 /* Position.swift */; };
+		248E488F25C9AFC500F3DC25 /* CommandInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E488925C9AFC500F3DC25 /* CommandInterpreter.swift */; };
+		248E489025C9AFC500F3DC25 /* DefaultCommandInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E488A25C9AFC500F3DC25 /* DefaultCommandInterpreter.swift */; };
+		248E489125C9AFC500F3DC25 /* ForwardCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E488B25C9AFC500F3DC25 /* ForwardCommandHandler.swift */; };
+		248E489225C9AFC500F3DC25 /* CommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E488C25C9AFC500F3DC25 /* CommandHandler.swift */; };
+		248E489325C9AFC500F3DC25 /* CommandError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E488D25C9AFC500F3DC25 /* CommandError.swift */; };
+		248E489425C9AFC500F3DC25 /* TurnCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E488E25C9AFC500F3DC25 /* TurnCommandHandler.swift */; };
+		248E489F25C9E05900F3DC25 /* UIActivityIndicatorView+IsActive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E489E25C9E05900F3DC25 /* UIActivityIndicatorView+IsActive.swift */; };
+		248E48A525C9E78E00F3DC25 /* CommandInterpreterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E48A425C9E78E00F3DC25 /* CommandInterpreterTests.swift */; };
+		248E48AD25C9F22000F3DC25 /* MainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E48AC25C9F22000F3DC25 /* MainViewModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		248E47ED25C9880F00F3DC25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 248E47CE25C9880D00F3DC25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 248E47D525C9880D00F3DC25;
+			remoteInfo = RoboSim;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		248E47D625C9880D00F3DC25 /* RoboSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoboSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		248E47D925C9880D00F3DC25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		248E47DB25C9880D00F3DC25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		248E47E225C9880E00F3DC25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		248E47E525C9880E00F3DC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		248E47E725C9880E00F3DC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		248E47EC25C9880F00F3DC25 /* RoboSimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoboSimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		248E47F225C9880F00F3DC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		248E482525C98A5900F3DC25 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		248E482625C98A5900F3DC25 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		248E482725C98A5900F3DC25 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		248E482D25C98A6400F3DC25 /* StartPositionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartPositionView.swift; sourceTree = "<group>"; };
+		248E482E25C98A6400F3DC25 /* RoomSizeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomSizeView.swift; sourceTree = "<group>"; };
+		248E482F25C98A6500F3DC25 /* RobotControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RobotControlView.swift; sourceTree = "<group>"; };
+		248E483025C98A6500F3DC25 /* RobotStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RobotStateView.swift; sourceTree = "<group>"; };
+		248E483125C98A6500F3DC25 /* NumericField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumericField.swift; sourceTree = "<group>"; };
+		248E484325C98A7900F3DC25 /* UIAlertController+Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Builder.swift"; sourceTree = "<group>"; };
+		248E484425C98A7900F3DC25 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		248E484925C98A8100F3DC25 /* BorderErrorField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderErrorField.swift; sourceTree = "<group>"; };
+		248E484A25C98A8100F3DC25 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		248E484B25C98A8100F3DC25 /* ErrorField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorField.swift; sourceTree = "<group>"; };
+		248E485D25C98B2500F3DC25 /* Stylesheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylesheet.swift; sourceTree = "<group>"; };
+		248E487D25C9AFB900F3DC25 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		248E487E25C9AFB900F3DC25 /* RobotState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RobotState.swift; sourceTree = "<group>"; };
+		248E487F25C9AFB900F3DC25 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		248E488025C9AFB900F3DC25 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		248E488125C9AFB900F3DC25 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		248E488925C9AFC500F3DC25 /* CommandInterpreter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandInterpreter.swift; sourceTree = "<group>"; };
+		248E488A25C9AFC500F3DC25 /* DefaultCommandInterpreter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultCommandInterpreter.swift; sourceTree = "<group>"; };
+		248E488B25C9AFC500F3DC25 /* ForwardCommandHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForwardCommandHandler.swift; sourceTree = "<group>"; };
+		248E488C25C9AFC500F3DC25 /* CommandHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandHandler.swift; sourceTree = "<group>"; };
+		248E488D25C9AFC500F3DC25 /* CommandError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandError.swift; sourceTree = "<group>"; };
+		248E488E25C9AFC500F3DC25 /* TurnCommandHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurnCommandHandler.swift; sourceTree = "<group>"; };
+		248E489E25C9E05900F3DC25 /* UIActivityIndicatorView+IsActive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorView+IsActive.swift"; sourceTree = "<group>"; };
+		248E48A425C9E78E00F3DC25 /* CommandInterpreterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandInterpreterTests.swift; sourceTree = "<group>"; };
+		248E48AC25C9F22000F3DC25 /* MainViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		248E47D325C9880D00F3DC25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248E481725C9891E00F3DC25 /* IQKeyboardManagerSwift in Frameworks */,
+				248E481C25C9894200F3DC25 /* Layoutless in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248E47E925C9880F00F3DC25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		248E47CD25C9880D00F3DC25 = {
+			isa = PBXGroup;
+			children = (
+				248E47D825C9880D00F3DC25 /* RoboSim */,
+				248E47EF25C9880F00F3DC25 /* RoboSimTests */,
+				248E47D725C9880D00F3DC25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		248E47D725C9880D00F3DC25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				248E47D625C9880D00F3DC25 /* RoboSim.app */,
+				248E47EC25C9880F00F3DC25 /* RoboSimTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		248E47D825C9880D00F3DC25 /* RoboSim */ = {
+			isa = PBXGroup;
+			children = (
+				248E485D25C98B2500F3DC25 /* Stylesheet.swift */,
+				248E481F25C9894A00F3DC25 /* ViewControllers */,
+				248E482025C9895400F3DC25 /* Views */,
+				248E482425C98A1700F3DC25 /* Model */,
+				248E482125C9896400F3DC25 /* CommandInterpreter */,
+				248E482225C9897500F3DC25 /* Extensions */,
+				248E482325C9897F00F3DC25 /* Utilities */,
+				248E47D925C9880D00F3DC25 /* AppDelegate.swift */,
+				248E47DB25C9880D00F3DC25 /* SceneDelegate.swift */,
+				248E47E225C9880E00F3DC25 /* Assets.xcassets */,
+				248E47E425C9880E00F3DC25 /* LaunchScreen.storyboard */,
+				248E47E725C9880E00F3DC25 /* Info.plist */,
+			);
+			path = RoboSim;
+			sourceTree = "<group>";
+		};
+		248E47EF25C9880F00F3DC25 /* RoboSimTests */ = {
+			isa = PBXGroup;
+			children = (
+				248E48A425C9E78E00F3DC25 /* CommandInterpreterTests.swift */,
+				248E48AC25C9F22000F3DC25 /* MainViewModelTests.swift */,
+				248E47F225C9880F00F3DC25 /* Info.plist */,
+			);
+			path = RoboSimTests;
+			sourceTree = "<group>";
+		};
+		248E481F25C9894A00F3DC25 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				248E482525C98A5900F3DC25 /* MainViewController.swift */,
+				248E482625C98A5900F3DC25 /* MainView.swift */,
+				248E482725C98A5900F3DC25 /* MainViewModel.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		248E482025C9895400F3DC25 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				248E482D25C98A6400F3DC25 /* StartPositionView.swift */,
+				248E482E25C98A6400F3DC25 /* RoomSizeView.swift */,
+				248E482F25C98A6500F3DC25 /* RobotControlView.swift */,
+				248E483025C98A6500F3DC25 /* RobotStateView.swift */,
+				248E483125C98A6500F3DC25 /* NumericField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		248E482125C9896400F3DC25 /* CommandInterpreter */ = {
+			isa = PBXGroup;
+			children = (
+				248E488025C9AFB900F3DC25 /* Command.swift */,
+				248E488D25C9AFC500F3DC25 /* CommandError.swift */,
+				248E488C25C9AFC500F3DC25 /* CommandHandler.swift */,
+				248E488925C9AFC500F3DC25 /* CommandInterpreter.swift */,
+				248E488B25C9AFC500F3DC25 /* ForwardCommandHandler.swift */,
+				248E488E25C9AFC500F3DC25 /* TurnCommandHandler.swift */,
+				248E488A25C9AFC500F3DC25 /* DefaultCommandInterpreter.swift */,
+			);
+			path = CommandInterpreter;
+			sourceTree = "<group>";
+		};
+		248E482225C9897500F3DC25 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				248E484325C98A7900F3DC25 /* UIAlertController+Builder.swift */,
+				248E484425C98A7900F3DC25 /* UIFont+Extensions.swift */,
+				248E489E25C9E05900F3DC25 /* UIActivityIndicatorView+IsActive.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		248E482325C9897F00F3DC25 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				248E484925C98A8100F3DC25 /* BorderErrorField.swift */,
+				248E484A25C98A8100F3DC25 /* ContentViewController.swift */,
+				248E484B25C98A8100F3DC25 /* ErrorField.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		248E482425C98A1700F3DC25 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				248E487F25C9AFB900F3DC25 /* Direction.swift */,
+				248E488125C9AFB900F3DC25 /* Position.swift */,
+				248E487E25C9AFB900F3DC25 /* RobotState.swift */,
+				248E487D25C9AFB900F3DC25 /* Room.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		248E47D525C9880D00F3DC25 /* RoboSim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 248E480025C9880F00F3DC25 /* Build configuration list for PBXNativeTarget "RoboSim" */;
+			buildPhases = (
+				248E47D225C9880D00F3DC25 /* Sources */,
+				248E47D325C9880D00F3DC25 /* Frameworks */,
+				248E47D425C9880D00F3DC25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoboSim;
+			packageProductDependencies = (
+				248E481625C9891E00F3DC25 /* IQKeyboardManagerSwift */,
+				248E481B25C9894200F3DC25 /* Layoutless */,
+			);
+			productName = RoboSim;
+			productReference = 248E47D625C9880D00F3DC25 /* RoboSim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		248E47EB25C9880F00F3DC25 /* RoboSimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 248E480325C9880F00F3DC25 /* Build configuration list for PBXNativeTarget "RoboSimTests" */;
+			buildPhases = (
+				248E47E825C9880F00F3DC25 /* Sources */,
+				248E47E925C9880F00F3DC25 /* Frameworks */,
+				248E47EA25C9880F00F3DC25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				248E47EE25C9880F00F3DC25 /* PBXTargetDependency */,
+			);
+			name = RoboSimTests;
+			productName = RoboSimTests;
+			productReference = 248E47EC25C9880F00F3DC25 /* RoboSimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		248E47CE25C9880D00F3DC25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					248E47D525C9880D00F3DC25 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					248E47EB25C9880F00F3DC25 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 248E47D525C9880D00F3DC25;
+					};
+				};
+			};
+			buildConfigurationList = 248E47D125C9880D00F3DC25 /* Build configuration list for PBXProject "RoboSim" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 248E47CD25C9880D00F3DC25;
+			packageReferences = (
+				248E481525C9891E00F3DC25 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				248E481A25C9894200F3DC25 /* XCRemoteSwiftPackageReference "Layoutless" */,
+			);
+			productRefGroup = 248E47D725C9880D00F3DC25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				248E47D525C9880D00F3DC25 /* RoboSim */,
+				248E47EB25C9880F00F3DC25 /* RoboSimTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		248E47D425C9880D00F3DC25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248E47E625C9880E00F3DC25 /* LaunchScreen.storyboard in Resources */,
+				248E47E325C9880E00F3DC25 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248E47EA25C9880F00F3DC25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		248E47D225C9880D00F3DC25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248E484C25C98A8100F3DC25 /* BorderErrorField.swift in Sources */,
+				248E483625C98A6500F3DC25 /* NumericField.swift in Sources */,
+				248E483225C98A6500F3DC25 /* StartPositionView.swift in Sources */,
+				248E488525C9AFB900F3DC25 /* Command.swift in Sources */,
+				248E488225C9AFB900F3DC25 /* Room.swift in Sources */,
+				248E485E25C98B2500F3DC25 /* Stylesheet.swift in Sources */,
+				248E489225C9AFC500F3DC25 /* CommandHandler.swift in Sources */,
+				248E484625C98A7900F3DC25 /* UIFont+Extensions.swift in Sources */,
+				248E484D25C98A8100F3DC25 /* ContentViewController.swift in Sources */,
+				248E482A25C98A5900F3DC25 /* MainViewModel.swift in Sources */,
+				248E482825C98A5900F3DC25 /* MainViewController.swift in Sources */,
+				248E489425C9AFC500F3DC25 /* TurnCommandHandler.swift in Sources */,
+				248E484525C98A7900F3DC25 /* UIAlertController+Builder.swift in Sources */,
+				248E489325C9AFC500F3DC25 /* CommandError.swift in Sources */,
+				248E483425C98A6500F3DC25 /* RobotControlView.swift in Sources */,
+				248E482925C98A5900F3DC25 /* MainView.swift in Sources */,
+				248E484E25C98A8100F3DC25 /* ErrorField.swift in Sources */,
+				248E488625C9AFB900F3DC25 /* Position.swift in Sources */,
+				248E488425C9AFB900F3DC25 /* Direction.swift in Sources */,
+				248E489F25C9E05900F3DC25 /* UIActivityIndicatorView+IsActive.swift in Sources */,
+				248E489125C9AFC500F3DC25 /* ForwardCommandHandler.swift in Sources */,
+				248E483325C98A6500F3DC25 /* RoomSizeView.swift in Sources */,
+				248E488325C9AFB900F3DC25 /* RobotState.swift in Sources */,
+				248E47DA25C9880D00F3DC25 /* AppDelegate.swift in Sources */,
+				248E489025C9AFC500F3DC25 /* DefaultCommandInterpreter.swift in Sources */,
+				248E483525C98A6500F3DC25 /* RobotStateView.swift in Sources */,
+				248E488F25C9AFC500F3DC25 /* CommandInterpreter.swift in Sources */,
+				248E47DC25C9880D00F3DC25 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248E47E825C9880F00F3DC25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248E48AD25C9F22000F3DC25 /* MainViewModelTests.swift in Sources */,
+				248E48A525C9E78E00F3DC25 /* CommandInterpreterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		248E47EE25C9880F00F3DC25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 248E47D525C9880D00F3DC25 /* RoboSim */;
+			targetProxy = 248E47ED25C9880F00F3DC25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		248E47E425C9880E00F3DC25 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				248E47E525C9880E00F3DC25 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		248E47FE25C9880F00F3DC25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		248E47FF25C9880F00F3DC25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		248E480125C9880F00F3DC25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RoboSim/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xper.RoboSim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		248E480225C9880F00F3DC25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RoboSim/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xper.RoboSim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		248E480425C9880F00F3DC25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RoboSimTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xper.RoboSimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoboSim.app/RoboSim";
+			};
+			name = Debug;
+		};
+		248E480525C9880F00F3DC25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RoboSimTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xper.RoboSimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoboSim.app/RoboSim";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		248E47D125C9880D00F3DC25 /* Build configuration list for PBXProject "RoboSim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248E47FE25C9880F00F3DC25 /* Debug */,
+				248E47FF25C9880F00F3DC25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		248E480025C9880F00F3DC25 /* Build configuration list for PBXNativeTarget "RoboSim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248E480125C9880F00F3DC25 /* Debug */,
+				248E480225C9880F00F3DC25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		248E480325C9880F00F3DC25 /* Build configuration list for PBXNativeTarget "RoboSimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248E480425C9880F00F3DC25 /* Debug */,
+				248E480525C9880F00F3DC25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		248E481525C9891E00F3DC25 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
+		248E481A25C9894200F3DC25 /* XCRemoteSwiftPackageReference "Layoutless" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devshark666/Layoutless";
+			requirement = {
+				branch = extensions;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		248E481625C9891E00F3DC25 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 248E481525C9891E00F3DC25 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		248E481B25C9894200F3DC25 /* Layoutless */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 248E481A25C9894200F3DC25 /* XCRemoteSwiftPackageReference "Layoutless" */;
+			productName = Layoutless;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 248E47CE25C9880D00F3DC25 /* Project object */;
+}
